@@ -16,6 +16,7 @@ class Shop:
         file = open(self.__file_name, 'r')
         products = file.read()
         return products
+        file.close()
 
     def add(self, *products):
         for i in products:
